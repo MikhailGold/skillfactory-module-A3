@@ -121,9 +121,16 @@
 				<h2 class="subscribe-head">Design tips, tricks, and freebies. Delivered weekly.</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</p>
 			</div>
-			<duv class="subscribe-form">
+			<!-- <duv class="subscribe-form">
 				<div class="email-input">Email Address...</div>
 				<a class="subscribe-button" href="#">Subscribe</a>
+			</div> -->
+			<div class="subscribe-form" >
+			<form action="" method="GET">
+				<label for="emailAddress"></label>
+				<input class="email-input" required type="email" name="emailAddress" id="emailAddress" placeholder="Email Address">
+				<button class="subscribe-button" type="submit">Subscribe</button>
+				</form>
 			</div>
 		</div>
 		<div class="feedback-contacts-wrapper">
@@ -131,20 +138,31 @@
 				<h2>Get in touch</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. </p>
 				<hr class="header-line feedback-line">
-				<div class="feedback-form">
-					<div class="name-input">Name</div>
-					<div class="email-input">Your Mail</div>
-					<div class="message-input">Type your message</div>
-					<a class="send-button" href="#">Send message</a>
+					<div class="feedback-form">
+						<form class="form" action="" method="GET">
+							<fieldset class="sender-fields">
+								<legend></legend>
+								<div class="inputs-data">
+									<input class="name-input" type="text" required name="nameClient" id="nameClient" placeholder="Name">
+									<input class="from-email-input" type="email" required name="emailClient" id="emailClient"
+									placeholder="Your Mail">
+								</div>
+							<!-- <input class="message-input" type="textarea" wrap="soft" required name="messageClient" id="messageClient" -->
+
+								<!-- placeholder="Type your message"> -->
+							<textarea  class="message-input" required cols="69" rows="9" maxlength="650" wrap="soft" placeholder="Type your message" ></textarea>
+							<button class="send-button" type="submit">Send message</button>
+						</fieldset>
+					</div>
 				</div>
-			</div>
-			<div class="contacts">
-				<h2>Contact info</h2>
-				<address class="contacts-address">
-					<p>Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh<br></p>
-					<p>redwan@deviserweb.com<br></p>
-					<p>(+88) 017 617 46373<br></p>
-				</address>
+				<div class="contacts">
+					<h2>Contact info</h2>
+					<address class="contacts-address">
+						<p>Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh<br></p>
+						<p>redwan@deviserweb.com<br></p>
+						<p>(+88) 017 617 46373<br></p>
+					</address>
+				</div>
 			</div>
 		</div>
 	</main>
