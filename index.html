@@ -124,7 +124,7 @@
 			<div class="subscribe-form" >
 			<form action="" method="GET">
 				<label for="emailAddress"></label>
-				<input class="email-input" required type="email" name="emailAddress" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="emailAddress" placeholder="Email Address">
+				<input class="email-input" required type="email" name="emailAddress" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="emailAddress" placeholder="Email Address" title="Введите Email">
 				<button class="subscribe-button" type="submit">Subscribe</button>
 				</form>
 			</div>
@@ -139,8 +139,8 @@
 							<fieldset class="sender-fields">
 								<legend></legend>
 								<div class="inputs-data">
-									<input class="name-input" type="text" required name="nameClient" id="nameClient" placeholder="Name">
-									<input class="from-email-input" type="email" required name="emailClient" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="emailClient" placeholder="Your Mail">
+									<input class="name-input" type="text" required name="nameClient" title="Введите имя без цифр" pattern="[A-Za-zа-яёА-ЯЁ]*" id="nameClient" placeholder="Name" >
+									<input class="from-email-input" type="email" required name="emailClient" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="emailClient" placeholder="Your Mail" title="Введите Email">
 								</div>
 								<textarea  class="message-input" name="messageClient" required cols="69" rows="9" maxlength="650" wrap="soft" placeholder="Type your message" ></textarea>
 								<button class="send-button" type="submit">Send message</button>
